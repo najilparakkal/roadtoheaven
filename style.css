@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Preahvihear', sans-serif;
+}
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+
+}
+#logo span{
+    color:rgb(255, 174, 1);
+}
+.navbar-toggler span{
+   color: rgb(255, 174, 1);
+ 
+   
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5 ease;
+}
+.nav-item .nav-link:hover{
+    background: rgb(255, 174, 1);
+    color: #f9f9f9;
+}
+#navbar form button{
+    background: rgb(255, 174, 1);
+    color: white;
+    border: none;
+}
+.home{
+    height:85vh ;
+    width: 100%;
+    background-image: url(/images/11.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h4{
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: rgb(255, 174, 1);
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "munnar";}
+    25%{content: "idukki";}
+    50%{content: "vayanad";}
+    75%{content: "alappuzha" ;}
+    100%{content: "cochi" ;}
+}
+.home .content p{
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30pxpx;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px; 
+     background: white;
+     color: black;
+     letter-spacing: 2px;
+     font-weight: 550;
+     border-radius: 5px;
+     transition: 0.5s;
+     margin-top: 10px;
+     text-decoration: none ;
+     font-family: 'Roboto Condensed', sans-serif;
+}
+.home .content a:hover{
+    background: rgb(255, 174, 1);
+    color: white;
+}
+@media (max-width:850px){
+    .home {
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h4{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content{
+        font-size: 13px;
+    }
+}
+.book{
+    padding: 50;
+    background: #f9f9f9;
+}
+.main-text h1{
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    padding-top: 50px;
+}
+.main-text h1 span{
+    color: rgb(255, 174, 1);
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-weight: 550;
+    background:rgb(255, 174, 1) ;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    float: right;
+    margin-top: 30px;
+}
+.book .submit:hover{
+    background: red;
+    color: black;
+    width: 200px;
+}
+@media (max-width:765px ){
+    .book{
+        padding:0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+.main-txt h1{
+    padding-top:60px ;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+} 
+.main-txt h1 span{
+    color: rgb(255, 174, 1) ;
+}
+.packages .card{
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size:25px ;
+    font-weight:600 ;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.star .checked{
+    margin-top: 10px;
+    color:rgb(255, 174, 1) ;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.packages .card .card-body a{
+
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 174, 1) ;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.packages .card .card-body a:hover{
+    background: red;
+    color: rgb(255, 174, 1);
+}
+.services{
+    background: #f9f9f9;
+    margin-top: 100px;
+}
+.services .card{
+    box-shadow: rgb(0, 0, 0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.services .card i{
+    margin-top: 20px;
+    text-align: center;
+    color:rgb(255, 174, 1) ;
+    font-size: 80px;
+}
+.services .card .card-body{
+    text-align: center;
+    margin-top: 10px;
+}
+.services .card .card-body h3{
+    font-weight:600 ;
+}
+.gallery{
+    margin-top: 30px;
+}
+.gallery .card{
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0,0.1) 0px 4px 12px;
+}
+.gallery .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallery .card img:hover{
+    transform: scale(1.1);
+    
+}
+.about{
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 100%;
+    margin-top: 50px;
+}
+.about .card img{
+    border-radius: 100%;
+}
+.about h2{
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+.about h2 span{
+    color:rgb(255, 174, 1) ;
+}
+.about p{
+font-weight: 500;
+}
+#about-button{
+    width: 150px;
+    height: 38px;
+    border-radius: 5px;
+    background: rgb(255, 174, 1);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    float: right;
+}
+#about-button:hover{
+    width: 200px;
+    height: 50px;
+    background: red;
+    color: rgb(255, 174, 1);;
+}
+@media (max-width:765px ){
+    .about{
+        padding: 0;
+    }
+}
+#footer{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+#footer p{
+    font-weight: 600;
+    padding-top: 10px;
+    text-shadow: 0px 1px 1px black;
+}
+#footer p span{
+    color: rgb(255, 174, 1);
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background:rgb(255, 174, 1);
+    color: #f9f9f9;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: greenyellow;
+    color: #f9f9f9;
+}
+.hr{
+    margin-left: 110px;
+    margin-right: 110px;
+}
